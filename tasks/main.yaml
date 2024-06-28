@@ -1,0 +1,16 @@
+%YAML 1.1
+---
+# tasks file for orange.user
+- name: Set Password For User {{ user_name }}
+  ansible.netcommon.netconf_config:
+    target: running
+    content:
+      config:
+        "@xmlns": "urn:ietf:params:xml:ns:netconf:base:1.0"
+        system:
+          "@xmlns": "urn:ietf:params:xml:ns:yang:ietf-system"
+          authentication:
+            user:
+              name: {{ user_name }}
+              password: {{ user_password }}
+...

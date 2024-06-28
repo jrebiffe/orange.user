@@ -1,0 +1,25 @@
+%YAML 1.1
+---
+argument_specs:
+  main:
+
+    short_description: >
+      Manage user accounts via NETCONF and ietf-system YANG module.
+
+    author: Jean Rebiffe
+
+    options:
+      power:
+        type: str
+        required: true
+        description: >
+          Name of the user to create, remove or modify.
+          Example: "testuser1".
+
+      interface:
+        type: str
+        required: true
+        description: >
+          If provided, set the user’s password to the provided encrypted hash.
+          Example: "TopSecret123*".
+...
