@@ -5,7 +5,7 @@ Manage user accounts via NETCONF and ietf-system YANG module
 Role Variables
 --------------
 
-This demonstrator use only 2 settable variables: `interface` and `power`.
+This demonstrator use only 2 settable variables: `user_name` and `user_password`.
 
 | Parameter       | Type   | Required | Example       | Comments                                                             |
 |-----------------|--------|----------|---------------|----------------------------------------------------------------------|
