@@ -1,4 +1,4 @@
-# orange.user
+# jrebiffe.user
 
 Manage user accounts via NETCONF and ietf-system YANG module
 
@@ -33,7 +33,7 @@ Here is a fully functional playbook, but insecure because password are in cleart
 
   roles:
 
-    - role: orange.user
+    - role: jrebiffe.user
       vars:
         user_name: testuser1
         user_password: TopSecret123*

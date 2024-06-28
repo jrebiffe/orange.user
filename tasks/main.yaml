@@ -11,6 +11,6 @@
           "@xmlns": "urn:ietf:params:xml:ns:yang:ietf-system"
           authentication:
             user:
-              name: {{ user_name }}
-              password: {{ user_password }}
+              name: "{{ user_name }}"
+              password: "{{ user_password }}"
 ...

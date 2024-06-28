@@ -9,14 +9,14 @@ argument_specs:
     author: Jean Rebiffe
 
     options:
-      power:
+      user_name:
         type: str
         required: true
         description: >
           Name of the user to create, remove or modify.
           Example: "testuser1".
 
-      interface:
+      user_password:
         type: str
         required: true
         description: >
